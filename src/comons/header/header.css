@@ -1,0 +1,15 @@
+.header-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+.logo-img{
+    width: 25%;
+}
+.select-langages {
+    font-weight: bold;
+}
+.langages-selection {
+    margin-right: 2rem;
+}
