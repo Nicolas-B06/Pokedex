@@ -3,5 +3,10 @@
     justify-content: center;
     position: sticky;
     width: 100%;
-    top: 60px;
+    top: 45px;
+    border-bottom: 4px solid #940000;
+    background-attachment: #000;
+}
+.search-input {
+    margin-bottom: 25px
 }

@@ -3,6 +3,7 @@
     border: 4px solid;
     border-radius: 20px;
     background-color: #fff;
+    font-family: 'Lucida Console', Monaco, monospace;
 }
 .poison{
     border-color: purple;
@@ -395,7 +396,7 @@
     padding: 5px 5px;
     border-radius: 10px;
     background-color: rgb(218 218 218);
-    color:#000;
+    color: #fff;
 }
 .type-bug{
     padding: 5px 5px;
@@ -447,11 +448,11 @@
 }
 
 /* content css*/
+
 .card-title {
     font-size: medium;
     text-align: center;
 }
-
 .card-img {
     display: block;
     margin-left: auto;
@@ -460,6 +461,8 @@
 .card-number {
     margin-left: 15px;
     font-size: small;
+    font-weight: bold;
+    font-family: 'Lucida Console', Monaco, monospace;
 }
 .type {
     gap:15px;
