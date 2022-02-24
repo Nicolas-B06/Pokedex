@@ -3,6 +3,9 @@
     justify-content: space-between;
     align-items: center;
     background-color: #000;
+    position: sticky;
+    width: 100%;
+    top: 0px;
 }
 .logo-img{
     width: 25%;

@@ -1,0 +1,7 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    width: 100%;
+    top: 60px;
+}
