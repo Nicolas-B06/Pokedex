@@ -4,15 +4,26 @@ import Header from '../comons/header/Header';
 import List from'../home/list/List' ;
 import data from '../data/pokemons.json';
 import Search from '../home/search/Search'
-
+import Footer from '../comons/footer/Footer';
 
 export default function Home() {
+
+    const [query, setQuery] = React.useState("")
+
+    const dataFilter = data.filter((pokemon)=>{
+        if ( pokemon.names.fr.toLowerCase().includes(query.toLowerCase())){
+            return true
+        } else { return false}
+    }
+
+    )
 
     return(
         <>
             <Header/>
-            <Search pokemons={data}></Search>
-            <List pokemons={data}></List>
+            <Search query={query} setQuery={setQuery}></Search>
+            <List pokemons={dataFilter}></List>
+            <Footer/>
         </>
     )
 }

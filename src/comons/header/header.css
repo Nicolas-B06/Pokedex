@@ -1,3 +1,8 @@
+@keyframes pulse {
+   
+  75%{opacity: 0.5;}
+      100%{ opacity: 0.75;}
+}
 .header-container{
     display:flex;
     justify-content: space-between;
@@ -7,12 +12,32 @@
     width: 100%;
     top: 0px;
 }
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 .logo-img{
     width: 25%;
 }
 .select-langages {
     font-weight: bold;
+    border-color: transparent;
+    color: coral;
+    margin-top: 56%;
+    background: radial-gradient(rgba(255,0,0,1),rgba(255,0,0,0));
+    animation: pulse 3.86s 2.5s infinite;
+    animation-delay: 3.86s
+    
+    
 }
+
 .langages-selection {
     margin-right: 2rem;
+    
+}
+.header-gif{
+    display: block;
+    width: 25%;
+    margin-right: 5%;
 }

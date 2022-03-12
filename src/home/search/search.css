@@ -1,11 +1,10 @@
 .search-container {
     display: flex;
     justify-content: center;
-    position: sticky;
+    position: fixed;
     width: 100%;
-    top: 45px;
     border-bottom: 4px solid #940000;
-    background-attachment: #000;
+    background-color: #000;
 }
 .search-input {
     margin-bottom: 25px
