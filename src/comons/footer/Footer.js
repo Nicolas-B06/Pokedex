@@ -7,10 +7,8 @@ export default function Footer(props) {
     return (
         <>
             <div className='footer-container'>
-                
-                    <img className='footer-gif' src={draco3} alt='gif pikachu'/>
+                <img className='footer-gif' src={draco3} alt='gif pikachu'/>
             </div> 
-            
         </>
     )
 }
