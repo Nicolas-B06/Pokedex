@@ -17,14 +17,12 @@ const style = {
   p: 4,
 };
 
-export default function Details( {data , dataType ,t}) {
+export default function Details( {data , dataType ,lang}) {
   const [open, setOpen] = React.useState(true);
   const { id } = useParams();
   
   const navigate = useNavigate();
   const pokemon = data[id-1];
-  const lang = t;
-
   const typeData = pokemon.types.map((type)=>{return type});
   const pokemonWeight = hectoToKg(pokemon.weight)
   const pokemonHeight = decimetreToMetre(pokemon.height)  

@@ -9,15 +9,12 @@ import data from './data/pokemons.json';
 function App() {
   const [lang, setLang] = React.useState( "fr" )
 
-  const t = lang
-  console.log(lang,'langage dans app');
-
   return (
     <>
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home data={data} dataType={dataType} lang={lang} setLang={setLang} t={t}/>}>
-          <Route path="/details/:id" element={<Details data={data} t={t} dataType={dataType} />} />
+        <Route path="/" element={<Home data={data} dataType={dataType} lang={lang} setLang={setLang}/>}>
+          <Route path="/details/:id" element={<Details data={data} lang={lang} dataType={dataType} />} />
         </Route> 
       </Routes>
       </BrowserRouter>
