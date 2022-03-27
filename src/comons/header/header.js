@@ -22,11 +22,14 @@ export default function Header({lang , setLang}) {
                     <div className='langages-selection'>
                         <select className='select-langages' value={lang} onChange={onChange} onBlur={onChange}>
                             <option value="fr">Langage</option>
-                            <option value="fr">FR</option>
-                             <option value="en">EN</option>
-                             <option value="ja">JA</option>
-                             <option value="de">DE</option>
-                             
+                            <option value="fr">Français</option>
+                             <option value="en">English</option>
+                             <option value="ja">日本</option>
+                            <option value="es">Español</option>
+                            <option value="de">Deutsch</option>
+                            <option value="it">Italiano</option>
+                            <option value="ko">한국어</option>
+
                         </select>
                     </div>
                     <img className='header-gif' src={draco4} alt='gif pikachu'/>
